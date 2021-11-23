@@ -59,7 +59,7 @@ console.log(multiply(77, 5))
 
 //Return the dividend of two numbers
 function divide(g, h){
-    return g, h;
+    return g / h;
 }
 console.log(divide(500, 21))
 

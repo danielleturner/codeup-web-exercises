@@ -127,8 +127,20 @@ if (isNotfull && doesNotConflict){
 //Ex4
 var username = 'codeup';
 var password = 'notastrongpassword';
-console.log( password.length >= 5);
-console.log(password.replace(username, "") == password);
+//console.log( password.length >= 5);
+if(password.length >= 5){
+    console.log('true')
+}else{
+    console.log('false')
+}
+
+//console.log(password.replace(username, "") == password);
+if (username.includes(password)) {
+    console.log(true)
+} else {
+    console.log(false)
+}
+
 console.log(username.length <= 20);
 console.log(username.trim() == username);
 console.log(password.trim() == password);
