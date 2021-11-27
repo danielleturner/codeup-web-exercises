@@ -56,26 +56,88 @@ function isTrue(boolean){}
 function isFasle(boolean){}
 
 /**- Make a function named `isTruthy(input)`, remember that values other than true
-will behave like true
-- Make a function named `isFalsy(input)`, remember that values other than false
-behave like false
-- Make a function named `isVowel(letter)`
-- Make a function named `isConsonant(letter)`
-- Make a function named `isCapital(letter)`
-- Make a function named `isLowerCase(letter)`
-- Make a function named `hasLowerCase(string)` that returns if a string has any
-lower cased letter
-- Make a function named `isSpace(letter)` that returns if a character is a space
-character
-- Make a function named `isZero(number)`
-- Make a function named `notZero(input)` that returns true if the input is not
-zero
-- Write a function named `lowerCase(string)`
-- Write a function named `double(n)` that returns a number times two
-- Write a function named `triple(n)` that returns a number times 3
-- Write a function named `quadruple(n)` that returns a number times 4
-- Write a function named `half(n)` that returns 1/2 of the provided input
-- Write a function named `subtract(a, b)` that returns `a` minus `b`
+will behave like true*/
+
+function isTruthy(input){}
+
+/**- Make a function named `isFalsy(input)`, remember that values other than false
+behave like false*/
+
+function isFalsy(input){}
+
+/**- Make a function named `isVowel(letter)`*/
+
+function isVowel(letter){}
+
+/**- Make a function named `isConsonant(letter)`*/
+
+function isConsonant(letter){}
+
+/**- Make a function named `isCapital(letter)`*/
+
+ function isCapital(letter) {}
+
+ /**- Make a function named `isLowerCase(letter)`*/
+
+  function isLowerCase(letter){}
+
+  /**- Make a function named `hasLowerCase(string)` that returns if a string has any
+lower cased letter*/
+
+  function hasLowerCase(string) {
+      return()
+  }
+
+/**- Make a function named `isSpace(letter)` that returns if a character is a space
+character*/
+/**- Make a function named `isZero(number)`*/
+
+function isZeron(number)
+
+/**Make a function named `notZero(input)` that returns true if the input is not
+zero*/
+
+function notZero(input) {
+    return( true !== 0);
+}
+
+/**- Write a function named `lowerCase(string)`*/
+
+function lowerCase(string)
+
+/**- Write a function named `double(n)` that returns a number times two*/
+
+let n = 6
+
+function doubled(n) {
+    return(2*(n))
+}
+console.log(doubled(n))
+
+/**- Write a function named `triple(n)` that returns a number times 3*/
+
+let n = 8
+
+function triple(n){
+    return(3*(n))
+}
+console.log(triple(n));
+
+/**- Write a function named `quadruple(n)` that returns a number times 4*/
+
+let n = 4
+
+function quadruple(n){
+    return(4*(n))
+}
+console.log(quadruple(n));
+
+/**- Write a function named `half(n)` that returns 1/2 of the provided input*/
+let n = 100
+function half(n)
+
+
+/**- Write a function named `subtract(a, b)` that returns `a` minus `b`
 - Write a function named `multiply(a, b)` that returns the product of `a` times
     `b`
 - Write a function named divide(a, b) that returns `a` divided by ~b~
