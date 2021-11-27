@@ -51,9 +51,9 @@ if (buytwo && offernotexpired) {
 }else{
     console.log('Try again muf*cka')
 }
-
-var username = 'codeup';
-var password = 'notastrongpassword'
+//////////////////////////////////////////
+var username = "codeup"
+var password = "notastrongpassword"
 
 console.log(password.length >= 5)
 if(password.length >= 5){
