@@ -137,15 +137,38 @@ let n = 100
 function half(n)
 
 
-/**- Write a function named `subtract(a, b)` that returns `a` minus `b`
-- Write a function named `multiply(a, b)` that returns the product of `a` times
-    `b`
-- Write a function named divide(a, b) that returns `a` divided by ~b~
-    - Write a function named `remainder(a, b)` that returns the remainder after
-dividing a by b
-- Make a function named `modulo(a, b)` that returns the returns the remainder
-after dividing a by b
-- Write a function named `cube(n)` that returns n * n * n
+/**- Write a function named `subtract(a, b)` that returns `a` minus `b`*/
+
+/**- Write a function named `multiply(a, b)` that returns the product of `a` times
+    `b`*/
+
+function multiply(a,b) {
+    console.log(a*(b))
+}
+console.log(multiply(a,b))
+
+/**- Write a function named divide(a, b) that returns `a` divided by ~b~*/
+
+function divide(a,b){
+    console.log(a/(b))
+}
+console.log(divide(a,b))
+/**    - Write a function named `remainder(a, b)` that returns the remainder after
+dividing a by b*/
+
+remainder(a, b) {
+    console.log(a%(b))
+}
+console.log(divide(a, b))
+/**- Make a function named `modulo(a, b)` that returns the returns the remainder
+after dividing a by b*/
+
+function modulo(a, b) {
+    console.log(a/(b)%)
+}
+console.log(modulo(a,b))
+
+/**- Write a function named `cube(n)` that returns n * n * n
 - Write a function named `squareRoot(n)` that returns the square root of the
 input
 - Write a function named `cubeRoot(n)` that returns the cube root of the input

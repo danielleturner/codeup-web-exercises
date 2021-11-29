@@ -27,7 +27,7 @@ function timeToFly(cloudyDay, totalFlights) {
 timeToFly(false, 6)
 
 /*function setSail(calmSeas, clearSkies) {
-    if (setSail == clearSkies)
+    if (setSail === clearSkies)
         console.log("Fair Winds and Following Seas")
     }else{
     console.log("I hope you brought swimming gear!")

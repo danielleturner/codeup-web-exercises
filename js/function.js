@@ -15,9 +15,13 @@ console.log(sayHello('Danny'))
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
- * Store the result of the function call in a variable named 'helloMessage'.
- *
- * console.log 'helloMessage' to check your work
+ * Store the result of the function call in a variable named 'helloMessage'.*/
+
+function sayHello(danny) {
+    console.log('Hello, ')
+}
+
+ /** console.log 'helloMessage' to check your work
  */
 
 function sayHello(name){ //Name of function
@@ -94,6 +98,12 @@ console.log(calculateTip(.10, 500))
  * then display the dollar amount they should tip
  */
 
+function calculateTip(z, y){
+    return percentage = total;
+}
+let x = prompt('Enter you bill total', '')
+let y = prompt('Enter the percentage you woul like to tip')
+alert("tip $" + calculateTip(z, y)
 
 
 /*
