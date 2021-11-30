@@ -108,8 +108,8 @@ console.log(anaylzeColor(randomColor))*/
 console.log(analyzeColor(person))
 console.log(prompt("Pick your favorite color"))*/
 
-let sign = prompt("Pick your favorite color");
-alert("Wow! " + sign + "that is my favorite color too!")
+//let sign = prompt("Pick your favorite color");
+//alert("Wow! " + sign + "that is my favorite color too!")
 /* ########################################################################## */
 
 /**
@@ -121,9 +121,25 @@ alert("Wow! " + sign + "that is my favorite color too!")
  * everything for free!.
  *
  * Write a function named `calculateTotal` which accepts a lucky number and total
- * amount, and returns the discounted price.
- *
- * Example:
+ * amount, and returns the discounted price.*/
+
+/**function calculateTotal(number){
+    if(number == 0) {
+        return "You don't get a discount"
+    }else if(number == 1) {
+        return "You get a 10% discount"
+    }else if(number == 2) {
+        return "You get a 25% discount"
+    }else if(number == 3) {
+        return "You get a 35% discount"
+    }else if(number == 4) {
+        return "You get a 50% discount"
+    }else(number == 5);
+        return "You get everything free"
+}
+console.log(calculateTotal(5))
+
+ /** Example:
  * calculateTotal(0, 100) // returns 100
  * calculateTotal(4, 100) // returns 50
  * calculateTotal(5, 100) // returns 0
@@ -141,23 +157,72 @@ alert("Wow! " + sign + "that is my favorite color too!")
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+//var randomNumber =['1', '2', '3', '4', '5'];
+//var luckyNumber = Math.floor(Math.random() * 6);
+
+//prompt("What is your total bill? Round to the nearest dollar!")
+
+//function calculateTotal(number) {
+   //alert("Your lucknumber is" + luckyNumber + "Your price was " + prompt() + "Now it's " + calculateTotal() + "- discount of " + randomNumber)
+//}
 
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
  * would like to enter a number. If they click 'Ok', prompt the user for a
- * number, then use 3 separate alerts to tell the user:
- *
- * - whether the number is even or odd
+ * number, then use 3 separate alerts to tell the user:*/
+
+
+
+//alert("Would you like to pick a number?")
+//prompt("What is your number?")
+//prompt("Ok pick a number wise guy")
+//alert("Really")
+//prompt("Just pick a number already!!")
+
+
+
+//prompt("Would you like to enter a number?")
+//if(prompt || false)
+  //  alert("Please pick a number sir or maam")
+//(prompt("Can you pick a number now?"))
+//if(prompt !== true)
+ //   alert("Thank You")
+
+//alert("Would you like to pick a number?")
+//prompt("What is your number?")
+//prompt("Ok pick a number wise guy")
+//alert("Really")
+//prompt("Just pick a number already!!")
+
+
+/** * - whether the number is even or odd
  * - what the number plus 100 is
  * - if the number is negative or positive
- *
- * Do *NOT* display any of the above information
+ */
+
+function enterNumber() {
+    prompt("Pick a number")
+   if(false == prompt())
+        return "Pick a number please"
+}
+console.log(prompt())
+
+ /** Do *NOT* display any of the above information
  * if the user enters a value that is not of the number data type.
- * Instead, use an alert to inform them of the incorrect input data type.
- *
- *
+ * Instead, use an alert to inform them of the incorrect input data type
+ */
+
+
+
+
+
+//function enterNumber() {
+ //   if(false == prompt())
+
+//}
+//console.log(prompt())
+ /*
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
