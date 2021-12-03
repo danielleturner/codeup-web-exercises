@@ -168,12 +168,23 @@
 //     } s += "\n"
 // } console.log(s);
 
-for(let i = 1; i <= 9; i++){
-    let a = "";
-    for(let k = i; k > 0; k--){
-        a += i;
-    }console.log(a)
-}
+// for(let i = 1; i <= 9; i++){
+//     let a = "";
+//     for(let k = i; k > 0; k--){
+//         a += i;
+//     }console.log(a)
+// }
+
+/** Number 5 */
+
+// for (var i = 100; i >=5 ; i-=5) {
+//     console.log(i);
+// }
+
+// for (var i = 5; i <= 100; i+=5) {  //book example
+//     console.log('for loop iteration #' + i);
+// }
+
 
 
 /** Slack Question */
