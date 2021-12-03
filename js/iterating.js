@@ -71,26 +71,26 @@
      * Create an array of 4 people's names and store it in a variable called
      * 'names'.
      */
-   var names = ['Danny', 'Chris', 'Tobby', 'Will'];
+   // var names = ['Danny', 'Chris', 'Tobby', 'Will'];
 
     /**
      * TODO:
      * Create a log statement that will log the number of elements in the names
      * array.
      */
-    var names = ['Danny', 'Chris', 'Tobby', 'Will'];
-    console.log(names.length);
+    // var names = ['Danny', 'Chris', 'Tobby', 'Will'];
+    // console.log(names.length);
 
 /**
      * TODO:
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
-    var names = ['Danny', 'Chris', 'Tobby', 'Will'];
-    console.log('The first name is: '+ names[0]);
-    console.log('The second name is: '+ names[1]);
-    console.log('The first name is: '+ names[2]);
-    console.log('The first name is: '+ names[3]);
+    // var names = ['Danny', 'Chris', 'Tobby', 'Will'];
+    // console.log('The first name is: '+ names[0]);
+    // console.log('The second name is: '+ names[1]);
+    // console.log('The first name is: '+ names[2]);
+    // console.log('The first name is: '+ names[3]);
 
     /**
      * TODO:
@@ -98,20 +98,48 @@
      * array.
      */
 
+    // var names = ['Danny', 'Chris', 'Tobby', 'Will'];
+    //
+    // for(let i = 0; i <= names.length; i++){
+    //     console.log('The names of the people in my class are ' + names[i]);
+    //     i++;
+    // }
+
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
-
+//     var names = ['Danny', 'Chris', 'Tobby', 'Will'];
+//     names.forEach(function(names) {
+//         console.log('My first classmate is: ' + names)
+// })
     /**
      * TODO:
      * Create the following three functions, each will accept an array and
      * return an an element from it
      * - first: returns the first item in the array
      * - second: returns the second item in the array
-     * - last: returns the last item in the array
-     *
-     * Example:
+     * - last: returns the last item in the array*/
+
+    var names = ['Danny', 'Chris', 'Tobby', 'Will'];
+
+    // let name1 = names[1]
+
+    function first(jello) {
+        return names[0];
+    }
+    console.log(names[0])
+
+    function second(fox) {
+    return names[1];
+}
+    console.log(names[1])
+
+    function last(fish) {
+    return names[3];
+    }
+    console.log(names[3])
+     /** Example:
      *  > first([1, 2, 3, 4, 5]) // returns 1
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
