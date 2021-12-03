@@ -9,22 +9,22 @@
  * color stated in the argument of the function. For colors you do not have
  * responses written for, return a string stating so*/
 
-/**function anaylzeColor(string){
+/*function anaylzeColor(string){
     if(string == 'red'){
-        return 'The color is Red'
-}else if(string == 'blue'){
-        return 'The color is blue'
+        return 'The Red Sea is Red'
+    }else if(string == 'blue'){
+        return 'The sky sometimes is blue'
     }else if(string == 'green'){
-        return 'The color is blue'
+        return 'The color of the ocean around hawaii is green'
     }else if(string == 'purple'){
-        return 'The color is purple'
+        return 'Prince made a song called purple rain'
     }else if(string == 'lavender'){
-        return 'The string is lavender'
+        return 'Lavender smells really good'
     }else{
         return 'I don\'t know?'
     }
 }
-console.log(anaylzeColor('lavender'));
+console.log(anaylzeColor('lavender'));*/
 
 /** Example:
  *  > analyzeColor('blue') // returns "blue is the color of the sky"
@@ -45,7 +45,7 @@ console.log(anaylzeColor('lavender'));
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
 
-/**var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+/*var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 function anaylzeColor(string){
@@ -90,27 +90,28 @@ console.log(anaylzeColor(randomColor))*/
 //var person = prompt("Pick your favorite color");
 //alert('Your favorite color is')
 
-/**function analyzeColor(string){
-    if(string == 'red'){
-        return 'The color is Red'
-    }else if(string == 'blue'){
-        return 'The color is blue'
-    }else if(string == 'green'){
-        return 'The color is blue'
-    }else if(string == 'purple'){
-        return 'The color is purple'
-    }else if(string == randomColor){
-        return 'Guess a color'
-    }else{
-        return 'I don\'t know?'
-    }
-}
-console.log(analyzeColor(person))
-console.log(prompt("Pick your favorite color"))*/
+//function analyzeColor(string){
+//    if(string == 'red'){
+//       return 'The color is Red'
+//    }else if(string == 'blue'){
+//        return 'The color is blue'
+//    }else if(string == 'green'){
+//        return 'The color is blue'
+//    }else if(string == 'purple'){
+//        return 'The color is purple'
+//    }else if(string == randomColor){
+ //       return 'Guess a color'
+ //   }else{
+ //       return 'I don\'t know?'
+ //   }
+//}
+//analyzeColor(randomColor)
+//console.log(analyzeColor(person))
+//console.log(prompt("Pick your favorite color"))
 
 //let sign = prompt("Pick your favorite color");
 //alert("Wow! " + sign + "that is my favorite color too!")
-/* ########################################################################## */
+/** ########################################################################## */
 
 /**
  * TODO:
@@ -123,7 +124,7 @@ console.log(prompt("Pick your favorite color"))*/
  * Write a function named `calculateTotal` which accepts a lucky number and total
  * amount, and returns the discounted price.*/
 
-/**function calculateTotal(number){
+/*function calculateTotal(number){
     if(number == 0) {
         return "You don't get a discount"
     }else if(number == 1) {
@@ -163,7 +164,7 @@ console.log(calculateTotal(5))
 //prompt("What is your total bill? Round to the nearest dollar!")
 
 //function calculateTotal(number) {
-   //alert("Your lucknumber is" + luckyNumber + "Your price was " + prompt() + "Now it's " + calculateTotal() + "- discount of " + randomNumber)
+   //alert("Your lucknumber is " + luckyNumber + "Your price was " + prompt() + "Now it's " + calculateTotal() + "- discount of " + randomNumber)
 //}
 
 /**
@@ -171,8 +172,16 @@ console.log(calculateTotal(5))
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
  * would like to enter a number. If they click 'Ok', prompt the user for a
  * number, then use 3 separate alerts to tell the user:*/
+/** * - whether the number is even or odd
+ * - what the number plus 100 is
+ * - if the number is negative or positive
+ */
 
 
+function askQuestion() {
+   confirm("Would you like to pick a number?")
+      if()
+}
 
 //alert("Would you like to pick a number?")
 //prompt("What is your number?")
@@ -196,17 +205,15 @@ console.log(calculateTotal(5))
 //prompt("Just pick a number already!!")
 
 
-/** * - whether the number is even or odd
- * - what the number plus 100 is
- * - if the number is negative or positive
- */
+//let thisHoldsValueOfNumberPicked = false;
 
-function enterNumber() {
-    prompt("Pick a number")
-   if(false == prompt())
-        return "Pick a number please"
-}
-console.log(prompt())
+//function enterNumber() {
+//    thisHoldsValueOfNumberPicked = confirm("Do you want to pick a number");
+//    let newNumber = prompt("Please pick a number")
+//    if(false == prompt())
+//        return "Pick a number please"
+//}
+//console.log(prompt())
 
  /** Do *NOT* display any of the above information
  * if the user enters a value that is not of the number data type.
@@ -217,11 +224,14 @@ console.log(prompt())
 
 
 
-//function enterNumber() {
- //   if(false == prompt())
 
-//}
-//console.log(prompt())
+//  let holder = enterNumber();
+//
+// let anotherVariable = holder + 1;function enterNumber() {
+//     return 9;
+// }
+
+
  /*
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved

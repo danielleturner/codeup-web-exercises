@@ -136,9 +136,9 @@ if(password.length >= 5){
 
 //console.log(password.replace(username, "") == password);
 if (username.includes(password)) {
-    console.log(true)
-} else {
     console.log(false)
+} else {
+    console.log(true)
 }
 
 console.log(username.length <= 20);

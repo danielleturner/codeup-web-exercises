@@ -80,5 +80,5 @@ function thatsNotMyName(name){
     if(name = "Laura")
         return("that's me!, I'm " + "name")
 }else{
-    return "that's not my name"
+    return "that's not my name";
 }
