@@ -132,14 +132,16 @@
 // function showMultiplicationTable() {
 //
 //     for (let number = 1; number <= 10; ++number) {
-//         let newNum = number * 7
-//         console.log(`7 x ${number} = ${newNum}`)
+//         let newNum = number * 7;
+//         console.log(`7 x ${number} = ${newNum}`);
 //     }
-
 // }
 // showMultiplicationTable()
 
+
+
 /** Number 3*/
+
 // var i = 1;
 // for(let i = 1; i < 10; ++i) {
 //       let randomNumber = Math.floor(Math.random() *(180) + 20);
@@ -151,12 +153,6 @@
 // }
 
 /** Number 4 */
-
-// var i, j;
-// for(i = 1; i < 999999999; i++) {
-    //     console.log("i is: ", i)
-// }
-
 
 // var s = "";
 //
@@ -180,7 +176,7 @@
 // for (var i = 100; i >=5 ; i-=5) {
 //     console.log(i);
 // }
-
+//
 // for (var i = 5; i <= 100; i+=5) {  //book example
 //     console.log('for loop iteration #' + i);
 // }

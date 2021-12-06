@@ -100,9 +100,8 @@
 
     // var names = ['Danny', 'Chris', 'Tobby', 'Will'];
     //
-    // for(let i = 0; i <= names.length; i++){
-    //     console.log('The names of the people in my class are ' + names[i]);
-    //     i++;
+    // for(let i = 0; i <= names.length; i++) {
+    //     console.log(names[i]);
     // }
 
     /**
@@ -111,7 +110,7 @@
      */
 //     var names = ['Danny', 'Chris', 'Tobby', 'Will'];
 //     names.forEach(function(names) {
-//         console.log('My first classmate is: ' + names)
+//         console.log(names);
 // })
     /**
      * TODO:
@@ -125,20 +124,25 @@
 
     // let name1 = names[1]
 
-    function first(jello) {
-        return names[0];
-    }
-    console.log(names[0])
+//     function first(array) {
+//         return names[0];
+//     }
+//     console.log(names[0])
+//
+//     function second(array) {
+//     return names[1];
+// }
+//     console.log(names[1])
+//
+//     function last(array) {
+//         let lastIndexOfArray = array.length - 1;
+//     return array[lastIndexOfArray];
+//     }
+//     console.log(names[3])
+//     console.log(first(names));
+//     console.log(second(names));
+//     console.log(last(names));
 
-    function second(fox) {
-    return names[1];
-}
-    console.log(names[1])
-
-    function last(fish) {
-    return names[3];
-    }
-    console.log(names[3])
      /** Example:
      *  > first([1, 2, 3, 4, 5]) // returns 1
      *  > second([1, 2, 3, 4, 5]) // returns 2
