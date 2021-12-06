@@ -12,9 +12,9 @@
      */
 
 
-    //  console.log(planetsArray);
-    //  var planetsArray = planetsString.split(',')
-    // console.log(planetsArray)
+     // console.log(planetsArray);
+     // var planetsArray = planetsString.split('|')
+     // console.log(planetsArray)
 
     /**
      * TODO:
@@ -22,14 +22,16 @@
      * results. Why might this be useful?
      */
 
-    var planetsArray = ["Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune"]
-    console.log(planetsArray.sort())
-    console.log(planetsArray.join("<br>"))
+    // var planetsArray = ["Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune"]
+    // const planetsWithBreaks = planetsArray.join('<br>')
+    // console.log(planetsWithBreaks)
 
     /**
      * Create another string that would display your planets in an undordered
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
+
+
 
 // })();*/

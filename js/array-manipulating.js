@@ -45,10 +45,10 @@ let samsDogs = ['blue', 'luna', 'scamp'];
 
 /**SORT METHOD*/
 
-let numbers = [5,72,-5]
-console.log(numbers.sort());//---sorting by numeric value
-console.log("sort() dogs", samsDogs.sort())
-console.log("samsDogs as a string", samsDogs.join("<br>"))// joins elements in array and with <br> in them
+// let numbers = [5,72,-5]
+// console.log(numbers.sort());//---sorting by numeric value
+// console.log("sort() dogs", samsDogs.sort())
+// console.log("samsDogs as a string", samsDogs.join("<br>"))// joins elements in array and with <br> in them
 
 /**SPLIT METHOD*/
 
