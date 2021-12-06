@@ -39,22 +39,34 @@
 //     }
 // }
 
- let dog = {
-     breed: "Huskey",
-     colors: ["brown", "black", "white"],
-     sex : "f",
-     name: "Fido",
-     isFloofer: true,
-     bark: function (){
-         if (loud)
-         console.log("Woof Woof")
-         else {
-             console.log("ruff ruff")
-         }
-     },
-     getDetails: function (){
-        return this.colors[0] + "" + this.breed +  " named " + this.name;
-     }
- };
+ // let dog = {
+ //     breed: "Huskey",
+ //     colors: ["brown", "black", "white"],
+ //     sex : "f",
+ //     name: "Fido",
+ //     isFloofer: true,
+ //     bark: function (){
+ //         if (loud)
+ //         console.log("Woof Woof")
+ //         else {
+ //             console.log("ruff ruff")
+ //         }
+ //     },
+ //     getDetails: function (){
+ //        return this.colors[0] + "" + this.breed +  " named " + this.name;
+ //     }
+ // };
 
  // console.log(createPuppy("Terri", ["brown", "grey"], "Wolf Dog"))
+
+ /**Laura's Example*/
+
+
+ // let table = {
+ //     noLegs: 4,
+ //     color: "light + brown",     //to access information in object use . notation or []
+ //     isSoft: false  // to get color you would do table.color
+ // }
+ // console.log(table.color)
+
+

@@ -6,8 +6,17 @@
      * Create an object with firstName and lastName properties that are strings
      * with your first and last name. Store this object in a variable named
      * `person`.
-     *
-     * Example:
+     */
+
+    var person = {
+
+        personFirstName: "Danielle",
+        personLastName: "Turner",
+    };
+    console.log(person.personFirstName)
+    console.log(person.personLastName)
+
+    /** Example:
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
