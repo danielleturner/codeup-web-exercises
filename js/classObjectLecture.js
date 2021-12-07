@@ -2,7 +2,19 @@
 // console.log("Welcome to object")
 // let person = {} // to declare an object
 // let person = new Object(); //another way to declare an object
-//
+//METHOD is a function saved in an object.
+ /** Method Example
+
+ // var person = {
+ //
+ //      personFirstName: "Danielle",
+ //      personLastName: "Turner",
+ //      getGreeting: function () {
+ //       return "hello " + " " + this.personFirstName +  " " + this.personLastName
+ //      }
+ //     };
+ // console.log(person.getGreeting())        */
+
 // let array = [1,2,3,4,5]
 
 // let person = new Object{}
@@ -56,8 +68,8 @@
  //        return this.colors[0] + "" + this.breed +  " named " + this.name;
  //     }
  // };
-
- // console.log(createPuppy("Terri", ["brown", "grey"], "Wolf Dog"))
+ //
+ // console.log("Terri", ["brown", "grey"], "Wolf Dog"))
 
  /**Laura's Example*/
 
