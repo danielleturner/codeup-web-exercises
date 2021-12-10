@@ -1,0 +1,101 @@
+
+h1 {
+    color: #1c2b72;
+    /*border: 3px solid black;*/
+    /*border thickness/style/color*/
+    border-radius: 8px;
+    /*border radius round the edges of the border of*/
+    /*background-color: rgb(74, 16, 182);*/
+    /*background-color: rgba(74, 16, 182, 0.6);*/
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: #1237af;
+}
+
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid aqua;
+}
+
+ul{
+    font-family: 'Corinthia', cursive;
+    color: yellow;
+}
+
+ol{
+    font-family: 'Corinthia', cursive;
+    color: yellow;
+}
+
+.values{
+    color: aquamarine;
+    text-decoration-line: underline;
+}
+
+.process{
+    color: #1237af;
+    text-decoration-line: underline;
+
+}
+
+.vision{
+    color: darkgreen;
+    text-decoration-line: underline;
+}
+
+.company{
+    color: navy;
+    text-decoration-line: underline;
+}
+
+#products{
+    color: orangered;
+    text-decoration-line: underline;
+}
+
+a{
+    color: red;
+    /*text-decoration-line: underline;*/
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+body{
+    background-image: linear-gradient(to right top, #c4fcef, #92e7e8, #5ed0e6, #26b6e6, #009be2,
+    #009be2, #009be2, #009be2, #26b6e6, #5ed0e6, #92e7e8, #c4fcef);
+}
+
+/* Step 1: Identify the element you want to style*/
+p{color: green;}
+/* Step 2: use tag name- will get applied to all elements that have that tag*/
+/* .class "dot" indicates a class element can assigned any name just make it similar*/
+
+h3:hover{
+    background-color: #04AA6D;
+}
+
+.blue{
+    color: darkblue;
+}
+/*!* # idValue *! styless of specific tag not all at once*/
+#title{
+    color: #04AA6D;
+}
+
+/* SYNTAX */
+
+/*selector {*/
+/*    !* apply css styling here *!*/
+/*    property: value;*/
+/*    property: value;*/
+/*    property: value;*/
+/*}*/
+
+/* adding text-decoration: none; to un-order list removes the underline from the link
