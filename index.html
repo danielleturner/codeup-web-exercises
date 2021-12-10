@@ -3,7 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to Veridian Dynamics</title>
+    <style>
+        /*h1 {*/
+        /*    color: red;*/
+        /*}*/
 
+        .fancy-header {
+            color: blue; /* single line comment */
+            text-decoration: underline;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <a id="Top-of-Page"></a>
@@ -11,21 +26,21 @@
         <p>At Veridian Dynamics, we solve your problems with <strong>technology.</strong></p>
 <hr>
 </body>
-    <h2>Core Values</h2>
+    <h2 class="values">Core Values</h2>
 <ul>
     <li>Competence</li>
     <li>Involvment</li>
     <li>Technology</li>
 </ul>
 
-<h2>Our Process</h2>
+<h2 class="process">Our Process</h2>
 <ol>
     <li>Our Process</li>
     <li>Evaluate</li>
     <li>Implement</li>
 </ol>
 
-<h2>2020 Vision</h2>
+<h2 class="vision">2020 Vision</h2>
 <ul>
     <li>Become #1 in Technology</li>
     <li>Increase Success by 20%</li>
@@ -33,8 +48,17 @@
 </ul>
 <hr>
 
-<h2>Company Vision</h2>
-<p>
+<h2 class="company">Company Vision</h2>
+
+<!--<div class="fixed">-->
+<!--    <video width="400" controls>-->
+<!--        <source src="mov_bbb.mp4" type="video/mp4">-->
+<!--        <source src="mov_bbb.ogg" type="video/ogg">-->
+<!--        Your browser does not support HTML video.-->
+<!--    </video>-->
+<!--    <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>-->
+<!--</div>-->
+<div>
     <img src="https://media.istockphoto.com/photos/first-person-point-of-view-of-a-woman-paddling-on-a-stand-up-paddle-picture
         -id1288844330?b=1&k=20&m=1288844330&s=170667a&w=0&h=nckXG0H5kPDbgDpC8iTObsiqG7Jwt6CeLuJ2WxdOTp4="
          width="500" height="333">
@@ -42,7 +66,7 @@
     <img src="https://media.istockphoto.com/photos/thailands-top-dive-destination-
         andaman-sea-picture-id1286335405?b=1&k=20&m=1286335405&s=170667a&w=0&h=qjTkDaoB0Dx0GWwhl76FSCbbd1mwIcKK42K7gK_C_j4="
          width="500" height="300">
-</p>
+</div>
 
 <p>
     <img src="https://media.istockphoto.com/photos/background-of-galaxy-
@@ -52,8 +76,8 @@
         MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=742&q=80" width="500" height="280">
 </p>
 
-<h2>Our Products</h2>
-<table>
+<h2 id="products">Our Products</h2>
+<!--<table border="1">--> <table>
     <th><strong>Plan</strong></th>
     <th><strong>Price</strong></th>
     <th><strong>Feautures</strong></th>
@@ -77,6 +101,13 @@
     </tr>
 </table>
 
-<h5>All Products with our quality gaurantee™</h5>
+    <h3>New Stuff</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cum deleniti dolor doloremque,
+        eius eligendi minima numquam omnis, optio quas, qui quisquam totam voluptatum!
+        Aspernatur consequatur doloribus temporibus. Tempora, vel!
+    </p>
+
+<h5 class="gaurantee">All Products with our quality gaurantee™</h5>
     <a href="#Top-of-Page">Go to the top of the page</a>
 </html>
