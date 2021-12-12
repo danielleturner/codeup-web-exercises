@@ -1,24 +1,44 @@
-h1{
-    color: blue;
+body {
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhY2glMjBvY2VhbnxlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-size: 100%;
 }
 
-p{
-    background-image: url("");
+h1{
+    color: #ffce99;
+    font-family: 'Corinthia', cursive;
+    text-decoration-line: underline;
+}
+
+.wholebackground{
+    /*!*background-image: url("https://images.pexels.com/photos/457881/pexels-photo-457881.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");*!*/
+    /*background-image: url("https://cdn.wallpapersafari.com/3/75/2CMOmL.jpg");*/
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* selector for id="container" */
-#container {
+/*header one below*/
+#headerone {
     border: 5px solid black;
     margin: 50px auto;
     width: 500px;
     padding: 10px;
 }
 
+/*.background {*/
+/*    background-color: #92e7e8;*/
+/*}*/
+
+
 /*  selector for all "h1" elements
     that are a descendent of id="container"
     and have a class of "fancy-header" */
+/*header two below*/
 .two {
-    color: blue;
+    color: #004d00;
     text-decoration: underline;
+    font-family: 'Corinthia', cursive;
 }
 
 /* selector for all "em" elements */
@@ -37,3 +57,6 @@ selector-todo {
     float:right;
 }
 
+/*.footer {*/
+/*    background: aquamarine;*/
+/*}*/

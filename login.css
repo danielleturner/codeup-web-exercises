@@ -87,7 +87,8 @@ fieldset {
     padding-top: 4px;
     padding-bottom: 4px;
     margin-top: .5em;
-    font-weight: bold;
+    padding-top: 4px;
+    /*width: calc(100%-4px);*/
 
 }
 
