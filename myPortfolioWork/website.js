@@ -1,7 +1,5 @@
+function reverseInt(n) {
+    const reversed = n.toString().split("").reverse().join("");
 
-
-let n = 150
-function half(n){
-    return(.5/(n))
+    return parseInt(reversed) * Math.sign(-9);
 }
-console.log(half(n))

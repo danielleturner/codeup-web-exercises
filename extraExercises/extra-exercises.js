@@ -168,19 +168,32 @@ console.log(divide(a, b))
 after dividing a by b*/
 
 function modulo(a, b) {
-    console.log(a/(b)%)
+    console.log(a%b)
 }
-console.log(modulo(a,b))
+console.log(modulo(5, 4))
 
 /**- Write a function named `cube(n)` that returns n * n * n*/
- function cube(n) {
-     return n * n * n
+function cube(n) {
+    return n ** n
 }
 
-/**- Write a function named `squareRoot(n)` that returns the square root of the
+
+/**- Write a function named `squareRoot(n)` that returns the square root of the*
 input*/
 
+function squareroot (n) {
+    return (Math.sqrt())
+}
+console.log(Math.sqrt(16))
+
 /**- Write a function named `cubeRoot(n)` that returns the cube root of the input
+ * */
+function cubeRoot(n) {
+    return Math.cbrt()
+}
+console.log(Math.cbrt(12)
+
+ /**
 - Write a function named `invertSign(number)` that returns a negative version of
 a postive number, a positve version of negative, and false for all else.
 - Write a function named `degreesToRadians(number)`
