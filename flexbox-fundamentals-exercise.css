@@ -60,6 +60,7 @@ section:nth-of-type(1) div:last-child {
     background: fuchsia;
     width: 3em;
     height: 1em;
+    margin: 1em 0;
 }
 
 .purple-box:nth-of-type(1) {
@@ -81,6 +82,7 @@ section:nth-of-type(1) div:last-child {
 section:nth-of-type(3) {
     /* enter needed declarations here */
     display: flex;
+    margin: 1.5em 0;
 }
 
 section:nth-of-type(3) h3 {
@@ -97,9 +99,12 @@ section:nth-of-type(3) h3 {
     margin: .5em;
 }
 
+section:nth-of-type(4) {
+    justify-content: space-around;
+}
 .large-brown-box {
     height: 5em;
-    width: 5em;
+    width: 9em;
     background: brown;
     /* enter needed declarations here */
 
@@ -120,6 +125,7 @@ section:nth-of-type(5) {
     background: yellow;
     width: 2em;
     height: 2em;
+    margin: 1em 0;
 
 }
 
