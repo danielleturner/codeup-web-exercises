@@ -1,0 +1,26 @@
+/*@media screen and (min-width: 300px) {*/
+/*    !* min widith means larger than the number *!*/
+/*    !* this also applies certain content above 300 *!*/
+/*    !* example if there was a background tag in this code section*/
+/*       the backround color would only change colors above 300 mean 301 and above*/
+/*     *!*/
+/*    !* any content that is within the curly braces of the media query can will also*/
+/*    be changed when above 300*/
+/*     *!*/
+/*}*/
+
+/* range of screen style */
+/*@media screen and (min-width: 300px) and (max-width: 700px) {*/
+/*    !* the added (and max width) will only allow the change to occur within the min*/
+/*        and max pixels(px)*/
+/*        If css background is set to a color by default the media querie will take over*/
+/*        screen once it hits the min and max width*/
+/*        [!important---tag overrides specificity any other tag applied to certain css style]*/
+/*     *!*/
+/*    !* if the using a navbar and you want to have it adjust with the screen min&ma.width*/
+/*        you would also put the nav bar properties in a media querie. Unless specifically */
+/*        changing flex display it will inheret the parent container flex*/
+/*     *!*/
+/*}*/
+
+/* breakpoint */

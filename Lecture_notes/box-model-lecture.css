@@ -1,0 +1,13 @@
+body{
+    background-color: lightsteelblue;
+}
+
+#first{
+    margin-bottom: 40px;
+}
+
+#second{
+    margin-top: 40px;
+    background-color: deeppink;
+    padding: 150px;
+}

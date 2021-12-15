@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+}
+.container {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: grey;
+    width: 100%;
+    height: 40px;
+}
+
+a {
+    display: inline-block;
+}
+
+li {
+    padding: 0;
+    margin-left: .5em;
+    list-style: none;
+    color: black;
+}
+
+li img {
+    margin-right: .5em;
+    padding: 0;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.bracketone  ul {
+    padding: 0;
+    margin-right: 9em;
+    margin-left: 1em;
+    /*word-spacing: 1cm;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.bracketone ul li {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.brackettwologo {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 10em;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.brackettwologo ul{
+    margin-top: 0;
+    margin-bottom: 10em;
+
+}
+
+.bracketthree ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    padding: 0;
+}
