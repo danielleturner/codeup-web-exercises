@@ -5,44 +5,35 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/flexbox-nav-exercise.css">
     <title>Document</title>
 </head>
-<style>
-    .container {
-        border-box: 1px solid black;
-        padding: .5em;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background: grey;
-        width: 100%;
-    }
-
-    a {
-        display: inline-block;
-    }
-
-    li {
-        list-style: none;
-        color: black;
-    }
-
-    li img {
-        background-color: grey;
-    }
-</style>
 <body>
-    <ul class="container">
-        <li>Articles</li>
-        <li>Products</li>
-        <li>Market</li>
-        <li>Jobs</li>
-        <li class="logo">Logo</li>
-        <li>Follow Us</li>
-        <li><img src="Assests/magclass.png" height="15" width="15"/></li>
-        <li><img src="Assests/cart.jpeg" height="15" width="15"/></li>
-        <li><img src="Assests/profileimg.png" height="15" width="15"/></li>
-    </ul>
+    <div class="container">
+        <div class="bracketone">
+            <ul>
+                 <li>Articles</li>
+                 <li>Products</li>
+                 <li>Market</li>
+                 <li>Jobs</li>
+            </ul>
+        </div>
+
+        <div class="brackettwologo">
+            <ul>
+                <li><strong>Logo</strong></li>
+            </ul>
+        </div>
+
+        <div class="bracketthree">
+            <ul>
+                <li>Follow Us</li>
+                <li><img src="Assests/magclass.png" height="15" width="15"/></li>
+                <li><img src="Assests/cart.jpeg" height="15" width="15"/></li>
+                <li><img src="Assests/profileimg.png" height="15" width="15"/></li>
+            </ul>
+        </div>
+    </div>
 
 </body>
 </html>
