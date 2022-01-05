@@ -7,16 +7,18 @@
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/custom.css">
     <title>Hello, Bootdstrap!</title>
 </head>
 <body>
-                                       <!-- Navbar bar below-->
+<!-- Navbar bar below-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Pizza world</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,7 +34,9 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li>
@@ -40,7 +44,8 @@
             </ul>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Zip code" aria-label="Search">
-                <input class="form-control me-5" type="search" placeholder="Search stores near you!" aria-label="Search">
+                <input class="form-control me-5" type="search" placeholder="Search stores near you!"
+                       aria-label="Search">
             </form>
         </div>
         <div class="flex-wrap-reverse">
@@ -48,87 +53,97 @@
         </div>
     </div>
 </nav>
-                            <!-- Welcome to Pizza World Display below -->
+<!-- Welcome to Pizza World Display below -->
 <div class="jumbotron">
-    <img src="/Assests/pizza.png"  class="img-fluid min-vw-100" alt="Responsive image">
+    <img src="/Assests/pizza.png" class="img-fluid min-vw-100" alt="Responsive image">
     <h1 class="display-8">Welcome to Pizza World!</h1>
 </div>
 
 
 <h2>Build your own pizza</h2>
 
-<ul class="nav nav-tabs">
-    <li class="nav-item">
-        <a class="nav-link active" href="#">1 Size and crust</a>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+           aria-selected="true"><span class="badge badge-secondary badge-pill">1</span> Size and crust</a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">2 Cheese and sauce</a>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+           aria-selected="false"><span class="badge badge-secondary badge-pill">2</span> Cheese and Sauce</a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">3 Toppings</a>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+           aria-selected="false"><span class="badge badge-secondary badge-pill">3</span> Toppings</a>
     </li>
-
 </ul>
 
-<div class="card" style="width: 25rem;">
-    <div class="first-container">
-        <h5 class="card-title">Hand Tossed</h5>
-            <p>Garlic seasoned crust with a rich, buttery taste.</p>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="card" style="width: 100%;">
+            <h4 class="bg-primary">Choose size and crust</h4>
+            <div class="handtoss">
+                <div class="first-container border" style="margin: 20px;">
+                    <h5 class="card-title" style="background-color: lightgray;"  >Hand Tossed</h5>
+                    <p>Garlic seasoned crust with a rich, buttery taste.</p>
+
+                    <div class="form-check border">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                               value="option1"
+                               checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Small (10")
+                        </label>
+                    </div>
+
+                    <div class="form-check border">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                               value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Medium (12")
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="third-container border" style="margin: 20px">
+            <h5 class="card-title" style="background-color: lightgray">Choose Non-Meats</h5>
+            <p>Thin enough for optimum crispy to crunchy ratio.</p>
+            <div class="form-check border">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                       value="option1"
+                       checked>
                 <label class="form-check-label" for="exampleRadios1">
                     Small (10")
-                 </label>
-        </div>
-    </div>
+                </label>
+            </div>
 
-    <div class="second-container">
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <div class="form-check border">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                       value="option2">
                 <label class="form-check-label" for="exampleRadios2">
                     Medium (12")
                 </label>
+            </div>
+        </div>
+
+        <div class="bottom-button">
+            <div class="d-grid gap-4 d-md-block">
+                <button class="btn btn-primary" type="button">Next ></button>
+            </div>
         </div>
     </div>
 
-    <div class="third-container">
-        <h5 class="card-title">Card title</h5>
-            <p>Thin enough for optimum crispy to crunchy ratio.</p>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Small (10")
-                </label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                 Medium (12")
-                </label>
-        </div>
-    </div>
-
-    <div class="bottom-button">
-        <div class="d-grid gap-4 d-md-block">
-            <button class="btn btn-primary" type="button">Next ></button>
-        </div>
-    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+</div>
 
 
-
-
-
-<!-- Optional JavaScript; choose one of the two! -->
-<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
--->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
 </body>
 </html>
