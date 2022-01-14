@@ -1,5 +1,6 @@
-/*# Function Drills*/
+/*# Function Drills/
 
+ */
 /**Functions using conditionals but not loops or arrays:**
 
    /*- Make a function named `isOdd(number)`*/

@@ -86,19 +86,23 @@
         })
 
         for (var i = 0; i < listItems.length; i+=2) {
-                var newColor = listItems[i];
-                console.log(newColor)
+                var liClr = listItems[i];
+                console.log(liClr)
+            var btn3 = document.getElementById("btn3")
+            console.log(btn3)
+            btn3.addEventListener("click", function (){
+                liClr.style.color = "red";
+            })
         }
 
 
-
-        var newPg = document.getElementsByClassName("sub-paragraph")[0];
-         console.log(newPg)
-        var btn4 = document.getElementById("btn4");
-        console.log(btn4)
-        btn4.addEventListener("click", function (){
-            newPg.innerHTML = "Mission Complete!";
-        })
+        // var newPg = document.getElementsByClassName("sub-paragraph")[0];
+        //  console.log(newPg)
+        // var btn4 = document.getElementById("btn4");
+        // console.log(btn4)
+        // btn4.addEventListener("click", function (){
+        //     newPg.innerHTML = "Mission Complete!";
+        // })
 
         })();
 
