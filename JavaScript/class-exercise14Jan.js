@@ -5,7 +5,7 @@ var names = ["Ryan", "Kieran", "Jason", "Mary", "Jo"]
 
 for (var i = 1; i < 5; i++) {
     if (i !== 0) {
-        continue;
+        break;
     }
-    console.log([names])
+    console.log([i])
 }
