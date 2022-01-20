@@ -25,6 +25,8 @@
 // $("*").css("border", "1px solid red");
 
 
+// Mouse Events
+
 // heading change colors on click
 $(".heading").click(function (){
     $(".heading").css("color", "red")
@@ -38,6 +40,7 @@ $(".p-one").dblclick(function (){
 })
 
 // li to red on hover
+
 // $("li").hover(function (){
 //     $(this).css('background-color', 'red')
 //     $("li").click(function (){
@@ -47,9 +50,15 @@ $(".p-one").dblclick(function (){
 
 // this method allow me to click once and light the li item up as red
 // it also allows me to dblclick
-$("li").click(function (){
-    $(this).css('background-color', 'red')
-    $("li").dblclick(function (){
-        $(this).css('background-color', 'white')
-    })
+// $("li").click(function (){
+//     $(this).css('background-color', 'red')
+//     $("li").dblclick(function (){
+//         $(this).css('background-color', 'white')
+//     })
+// })
+
+$("li").hover(function (){
+    $(this).css("background-color", "lightblue");
+},function (){
+    $(this).css("background-color", "white");
 })

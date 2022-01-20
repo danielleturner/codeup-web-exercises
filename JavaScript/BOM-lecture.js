@@ -35,6 +35,6 @@ function add(num1){
 console.log(add(favoriteNumber));
 
 let name = prompt("what is your name?");
-console.log("your name is : " name)
+// console.log("your name is : " name)
 
 let absent = prompt("How many student are in your class");
