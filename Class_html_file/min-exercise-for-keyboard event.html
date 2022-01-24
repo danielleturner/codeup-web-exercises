@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Keyboard Events Mini-Exercise</title>
+</head>
+<body>
+<h1>Keyboard Events Mini-Exercise</h1>
+
+<p>Please type something into this form:</p>
+<!--<form>-->
+<!--    <input type="text" id="textfield" name="textfield" placeholder="Type Here"/>-->
+<!--</form>-->
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossOrigin="anonymous"></script>
+<script src="/js/jquery_selector_exercises.js">
+<script src="/js/jquery-2.2.4.js"></script>
+<script>
+    $(document).on('keydown', (function(e) {
+
+        "use strict";
+        // TODO: when the user types the letter 'a', pop up an alert that says "Welcome!"
+            if (e.key === 'ArrowUp' ) {
+                alert("Welcome");
+                console.log(a)
+            } else if (e.key === "c") {
+                confirm("Logout");
+            } else if (e.key === "p") {
+                prompt("enter your password");
+            }
+        // TODO: when the user types the letter 'c', pop up a confirm that says "Logout?"
+        // TODO: when the user types the letter 'p', prompt the user to enter their username
+    }));
+</script>
+</body>
+</html>
+
+<!--                                        /** Password html Template**/-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>JQuery Keyboard Events Lecture: Password Example</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<header>-->
+<!--    <h1>Keyboard Events</h1>-->
+<!--</header>-->
+<!--<main>-->
+<!--    <p>Passwords must be 8 or more characters long and contain at least one number.</p>-->
+<!--    <form action="#">-->
+<!--        <label for="password-input">Password</label>-->
+<!--        <br>-->
+<!--        <input id="password-input" type="password" placeholder="Enter a password" name="password">-->
+<!--        <br><br>-->
+<!--        <button id="submit-btn" disabled>Sign Up</button>-->
+<!--    </form>-->
+<!--</main>-->
+<!--<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>-->
+<!--<script>-->
+<!--    $(document).ready(function() {-->
+<!--        "use strict";-->
+
+<!--        // returns true if the passed password string is at least 8 characters long and contains at least 1 number-->
+<!--        function isValidPass(str) {-->
+<!--            return (str.length >= 8 && '1234567890'.split('').some(e => str.includes(e)));-->
+<!--        }-->
+
+<!--        // disables and enables submit button based on passed boolean-->
+<!--        function controlSubmitButton(boolean) {-->
+<!--            if (boolean) {-->
+<!--                $('#submit-btn').prop('disabled', false);-->
+<!--            } else {-->
+<!--                $('#submit-btn').prop('disabled', true);-->
+<!--            }-->
+<!--        }-->
+
+<!--        // for each keyup event in the text input, check if password is valid or invalid-->
+<!--        $('#password-input').on('keyup', function(e) {-->
+<!--            var enableBtn = isValidPass($('#password-input').val());-->
+<!--            controlSubmitButton(enableBtn);-->
+<!--        });-->
+
+<!--    });-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

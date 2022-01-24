@@ -7,12 +7,28 @@
 // I is uppercase
 // * is not a letter
 
-// let name = "Book Shelf";
-var str = ['This Is My String'];
+// let vowels = "bJI*ENsd4fRAIR5VIrsRFA-ijgRar";
+//
+//
+//
+// let isUpper = function (){
+//     for (let i = 0; i < vowels.length; i++){
+//         if (i === vowels) {
+//             console.log(i)
+//     }
+// }}
 
-for (var i = 0; i < str.length; i++) {
-    if (str !== toLowerCase(name) ){
-        console.log(str)
-    }
-}
 
+
+
+// let isUpper = (vowels) => {
+// for (let i = 0; i < vowels.length; i++)
+//     // let letter = vowels[i];
+//
+//     if (i === i.toUpperCase()) {
+//         return [i]
+//     }
+// }
+
+
+/**Key board Events*/
