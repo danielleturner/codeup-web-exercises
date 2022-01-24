@@ -3,10 +3,14 @@
 //INPUT 2: "917485"      --- EXPECTED OUTPUT 2: 34
 
 
-let x = "";
-let y = "";
+sumNumb("4, 2, 9, 5, 8, 3, 7, 2");
+sumOtherNumb("9, ")
 
- function sumNum(x, y) {
-    return x + y;
-}
-console.log(sumNum(42958372, 917485));
+function sumNumb(str){
+    let strArr = str.split(",");
+    let sumNumb = strArr.reduce(function(total, num){
+        return parseFloat(total) + parseFloat(num);
+    });
+
+    return sumNumb;
+};
