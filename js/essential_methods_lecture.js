@@ -20,9 +20,10 @@
 // grab element that is listening for the click
 // change the css(.css()) method
 
-$("h1").click(function (){
-    $("h1").toggleClass("highlight");
-})
+// $("h1").click(function (){
+//     $("h1").toggleClass("highlight");
+// })
 
 
-
+/** Traversing Methods**/
+//finding elements over the DOM
