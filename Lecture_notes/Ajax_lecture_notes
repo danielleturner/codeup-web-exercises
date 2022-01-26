@@ -1,0 +1,30 @@
+// Ajax
+
+-Ajax stands for Asynchronous JavaScript and XML
+-Asynchronous - not at the same time --> thanksgivinv cooking, start
+-turkey, while the turkey is cooking you can make the stuffing.
+- yelling into a canyou
+- synchronous - at the same time --> dominoes falling -- sirius cohort
+-an event listener ---> waiting for click to happen
+-xml Extensible Markup Language (XML) is a simple text-based format for representing structured information
+design to store and transport data
+-js
+-web server - server that holds your website
+-http server
+-json
+
+//How to make an AJAX request (jquery syntax)
+
+$.ajax() method for requesting ajax
+$("https://dog.ceo/api/breeds/image/random")
+
+// Requests:
+// Get
+// Post --> sending information to be stored on the server
+// Delete --> send specific information about the file that needs to be deleted
+// will not return a response of item is deleted
+// PUT --> edit / send the info about the thing youre editing, and
+// you'll recieve the edited thing back.
+
+
+///  Documentation
