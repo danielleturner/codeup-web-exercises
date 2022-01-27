@@ -2,7 +2,7 @@
 <html>
 <head>
   <style>
-    table, tr, th {
+    table, tr, th, td {
       border:1px solid black;
     }
   </style>
@@ -11,7 +11,7 @@
 <body>
 
 <h1>My Tool Store</h1>
-
+<p>
 <table id="products" style="width: 50%;">
   <thead>
   <tr>
@@ -23,7 +23,7 @@
   </thead>
   <tbody id="insertProducts"></tbody>
 </table>
-
+<input type="button" value="refresh" onClick="refresh" class="fresh"></p>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script>
@@ -36,7 +36,15 @@
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
+    let refresh = $(".fresh");
 
+    refresh.click(function (){
+      console.log("clicked");
+
+      function refresh() {
+        window.location.reload("Refresh")
+      }
+    })
 
    $.get("../data/inventory.json")
            .done(function (data){
@@ -45,11 +53,13 @@
                console.log(post.categories[0])
                let newEl = `<tr>
                                 <th>${post.title}</th>
-                                <tb>${post.quantity[2]}</tb>
-                                <tb>${post.categories[0]}</tb>
-                                <tb>${post.price}</tb>
+                                <td>${post.quantity}</td>
+                                <td>${post.categories[0]}</td>
+                                <td>${post.price}</td>
                             </tr>`
                $("#insertProducts").append(newEl)
+
+
              })
            })
 

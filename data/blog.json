@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Cyber Security or Software Developer?",
+    "content": "My journey to becoming a software developer has been a little somewhat accidental. To say that I've always wanted to be a software developer is by no stretch of the imagination true. I realized I wanted to become a software developer towards the end of my bachelors degree in college. I remember it like it was yesterday. It was a sunday afternoon just like any other sunday afternoon except this time I had to build a website with the something called html and css. Being a computer science major and having already obtained and AS degree in computer networking I thought it was going to be a walk in the park. Boy was I wrong! I spent 4 hours looking at my screen and another 3 hours in the fetal position wondering why was I born. After all this had ended I took a look at my notebook and started to take the first step to become a software developer. To this day I have never been able to adjust view port height to resize the pictures of the cars.   ",
+
+    "categories": [
+      "Pain and Perseverance"
+    ],
+    "date": "December 6, 2020"
+  }, {
+  "title": "Finished College now what?",
+  "content": "After completing my degree I became increasingly more aware  then ever that I was not ready for a job as a software engineer. After taking some udemy courses I realized that this wasn't getting me anywhere. As a typical college graduate would due I went out and bout books 5 to be exact. Python, C++, Java and a few others. After spending countless hors of reading and coding then seeing a page full those awful little red x's with circles around them I realized I was getting know where fast. Now what? I realized that I could teach myself to code over a certain period of time but time wasn't on my side. The only logical choice was to go back to school. Then next I ponder was where to go to school and why. My first choice was going to San Diego State and getting my Master's in Computer Science however that never really panned out because of the pandemic.",
+  "categories": [
+    "Wrong Turn"
+  ],
+  "date": "February 14, 2021"
+}, {
+  "title": "Coding Bootcamp",
+  "content": "I finally decided to enroll in a coding bootcamp. However there were literally hundreds of BootCamps to choose from. They all promised great results for $17,500. After searching and doing a few online assements I decided to attend Code Up which had the best job placement among all coding bootcamps. Let's be honest no one spends this kind of money not to get a job. Did I mentioned that Code Up tution was $27,500! So I called my uncle Sam and he took care of everything else. I think all veterans have the same uncle so in a way we are all related. 'Fun Fact'",
+  "categories": [
+    "The journey begins"
+  ],
+  "date": "November 14, 2021"
+}
+]

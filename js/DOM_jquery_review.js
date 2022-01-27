@@ -23,13 +23,13 @@ handle the toggle
 // })
 
 /**make paragraph disappear and reappear after clicking**/
-// let changeMe = $(".bg");
-// let listenin = $("#tgl");
-//
-// listenin.click(function (){
-//     console.log("clicked")
-//     changeMe.toggleClass("hideMe")
-// })
+let changeMe = $(".bg");
+let listenin = $("#tgl");
+
+listenin.click(function (){
+    console.log("clicked")
+    changeMe.toggleClass("hideMe")
+})
 
 /**Difference between using dom / jauery**/
 //jquery
@@ -37,8 +37,8 @@ handle the toggle
 //  let listenin = $("#tgl")
 
 //DOM
-document.getElementsByClassName("bg");
-document.getElementById("tgl")
+// document.getElementsByClassName("bg");
+// document.getElementById("tgl")
 
 /**doc vs load**/
 

@@ -67,3 +67,13 @@ $.get("https://jsonplaceholder.typicode.com/posts")
             $(".container").append(newEl)
         })
     })
+
+// let refresh = $(".fresh");
+//
+// refresh.click(function (){
+//     console.log("clicked");
+//
+//     function refresh() {
+//         window.location.reload("Refresh")
+//     }
+// })
