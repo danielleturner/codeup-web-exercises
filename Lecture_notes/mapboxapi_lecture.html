@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Mapbox Map</title>
+    <!-- Mapbox CSS -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Custom CSS -->
+    <style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 500px;
+            height: 500px;
+        }
+
+        .my-class {
+            height: 500px;
+            width:  500px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>My First Mapbox Map!</h1>
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<!-- Mapbox JS -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="../Lecture_notes/mapbox-geocoder-utils.js"></script>
+<!-- Custom JS -->
+<script>
+    mapboxgl.accessToken = "";
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-98.2739514, 29.5650009]  // Step (1) longitude latitude once coordinates are achieved create a marker by going to mapbox.com/marker
+    });
+
+    // Create a new marker.
+    const marker = new mapboxgl.Marker()
+        .setLngLat([-98.2739514, 29.5650009]) // where we are setting the marker at (location)
+        .addTo(map); // where we are attaching the marker (attaches to the map we created in html)
+
+    // Popups
+    // const markerHeight = 50;
+    // const markerRadius = 10;
+    // const linearOffset = 25;
+    // const popupOffsets = {
+    //     'top': [0, 0],
+    //     'top-left': [0, 0],
+    //     'top-right': [0, 0],
+    //     'bottom': [0, -markerHeight],
+    //     'bottom-left': [linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
+    //     'bottom-right': [-linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
+    //     'left': [markerRadius, (markerHeight - markerRadius) * -1],
+    //     'right': [-markerRadius, (markerHeight - markerRadius) * -1]
+    // };
+
+    var popup = new mapboxgl.Popup()
+        .setLngLat(-98.2739514, 29.5650009)
+        .setHTML("<h1>I'm here!</h1>")
+        .addTo(map)
+        marker.setPopup(popup);
+
+
+    // function geocode(search, token) {
+    //     var baseUrl = 'https://api.mapbox.com';
+    //     var endPoint = '/geocoding/v5/mapbox.places/';
+    //     return fetch(baseUrl + endPoint + encodeURIComponent(search) + '.json' + "?" + 'access_token=' + token)
+    //         .then(function(res) {
+    //             return res.json();
+    //             // to get all the data from the request, comment out the following three lines...
+    //         }).then(function(data) {
+    //             return data.features[0].center;
+    //         });
+    // }
+
+
+    // the  geocode method from mapbox-geocoder-utils.js
+    // geocode("600 Navarro St #350, San Antonio, TX 78205", mapboxgl.accessToken.then(function(result) {
+    //     console.log(result);
+    //     map.setCenter(result);
+    //     map.setZoom(20);
+    // });
+
+    // the  geocode method from mapbox-geocoder-utils.js
+    geocode("600 Navarro St #350, San Antonio, TX 78205", mapboxgl.accessToken).then(function(result) {
+        console.log(result);
+        map.setCenter(result);
+        map.setZoom(20);
+    });
+
+</script>
+</body>
+</html>
