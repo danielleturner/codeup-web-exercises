@@ -1,1 +1,1 @@
-const myToken = "pk.eyJ1IjoiZGFubjI0MjUiLCJhIjoiY2t5eGhkcTI2MGltajJwbzAxaWZsc285NyJ9.PDUTzXiME9pUHNkTsjYRew";
+const my_mapbox_Token = "pk.eyJ1IjoiZGFubjI0MjUiLCJhIjoiY2t5eGhkcTI2MGltajJwbzAxaWZsc285NyJ9.PDUTzXiME9pUHNkTsjYRew";

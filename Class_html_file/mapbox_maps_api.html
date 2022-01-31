@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Mapbox CSS -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+    <!-- Custom CSS -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+
+        .jumbotron-fluid {
+
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        #cnt1 {
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 23px 25px 25px 25px;
+            margin: 5px;
+        }
+
+        #olivegarden {
+            padding: 10px;
+            border: 2px solid blue;
+            border-radius: 23px 25px 25px 25px;
+            margin: 5px;
+        }
+
+        #bzstk {
+            padding: 10px;
+            border: 2px solid red;
+            border-radius: 23px 25px 25px 25px;
+            margin: 5px;
+        }
+
+        #map {
+            /* the width and height may be set to any size */
+            width: 350px;
+            height: 350px;
+        }
+
+        #pasta {
+            height: 350px;
+            width: 350px;
+        }
+
+        #steak {
+            margin-left: 45px;
+            height: 350px;
+            width: 350px;
+            padding: 0;
+
+        }
+
+    </style>
+    <title>Good food</title>
+</head>
+
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <h1>My favorite restaurants!</h1>
+</div>
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div class="container" id="cnt1">
+    <div class="row">
+        <div class="col">
+            <div id='map'></div>
+        </div>
+        <div class="col">
+            <img src="../Assests/chilis.jpeg" style="width: 600px">
+        </div>
+    </div>
+</div>
+
+<div class="container" id="olivegarden">
+    <div class="row">
+        <div class="col">
+            <div id="pasta"></div>
+        </div>
+        <div class="col">
+            <img src="../Assests/olivegarden.webp" alt="" id="garden">
+        </div>
+    </div>
+</div>
+
+<div class="container" id="bzstk">
+    <div class="row">
+        <div class="col">
+            <div class="container" id="steak"></div>
+            <p>hello</p>
+        </div>
+        <div class="col">
+            <img src="../Assests/brazalliansteak.jpeg" alt="" style="width: 600px">
+        </div>
+    </div>
+</div>
+
+<script src="../Lecture_notes/Token.js"></script>
+
+<!-- Mapbox JS -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+<script src="../Lecture_notes/mapbox-geocoder-utils.js"></script>
+
+<!-- Optional JavaScript; choose one of the two! -->
+<script>
+    mapboxgl.accessToken = my_mapbox_Token;
+
+    // Chilis
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 15,
+        center: ([-98.27442032070265, 29.600681797448452]) // Step (1) longitude latitude once coordinates are achieved create a marker by going to mapbox.com/marker
+
+    });
+
+    const marker = new mapboxgl.Marker()
+        .setLngLat([-98.27442032070265, 29.600681797448452]) // where we are setting the marker at (location)
+        .addTo(map)
+
+    var popup = new mapboxgl.Popup()
+        .setLngLat([-98.27442032070265, 29.600681797448452])
+        .setHTML("<h5>Come Join for dinner today!</h5>")
+        .addTo(map)
+    marker.setPopup(popup);
+
+
+    // Olive Garden
+    var pasta = new mapboxgl.Map({
+        container: 'pasta',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 15,
+        center: [-98.34053, 29.56379]
+    });
+
+    const point = new mapboxgl.Marker()
+        .setLngLat([-98.34053, 29.56379])
+        .addTo(pasta)
+
+
+    var pop = new mapboxgl.Popup()
+        .setLngLat([-98.34053, 29.56379])
+        .setHTML("<h5>Come Join for dinner today!</h5>")
+        .addTo(pasta)
+    point.setPopup(pop);
+
+    // Brazilian Steakhouse
+    var good = new mapboxgl.Map({
+        container: 'steak',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 15,
+        center: [-98.60677, 29.62083]  // Step (1) longitude latitude once coordinates are achieved create a marker by going to mapbox.com/marker
+    });
+    console.log(good)
+    const elSteak = new mapboxgl.Marker()
+        .setLngLat([-98.60677, 29.62083])
+        .addTo(good)
+
+
+    var message = new mapboxgl.Popup()
+        .setLngLat([-98.60677, 29.62083])
+        .setHTML("<h5>Come Join for dinner today!</h5>")
+        .addTo(good)
+    elSteak.setPopup(message)
+
+    let resturants = ["17650 I-35 N, Schertz, TX 78154", "2150 IKEA-RBFCU Pkway, Live Oak, TX 78233", "19210 W I-10, San Antonio, TX 78257"]
+
+    resturants.forEach(function (restaurant) {
+        console.log(restaurant)
+        geocode(restaurant, my_mapbox_Token)
+            .then(function (result) {
+                console.log(result);
+                good.setCenter(result);
+                good.setZoom(15);
+            });
+    })
+
+</script>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+</body>
+</html>

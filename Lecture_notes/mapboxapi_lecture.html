@@ -33,7 +33,7 @@
 <script src="../Lecture_notes/mapbox-geocoder-utils.js"></script>
 <!-- Custom JS -->
 <script>
-    mapboxgl.accessToken = "";
+    mapboxgl.accessToken = "pk.eyJ1IjoiZGFubjI0MjUiLCJhIjoiY2t5eGhkcTI2MGltajJwbzAxaWZsc285NyJ9.PDUTzXiME9pUHNkTsjYRew";
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9',
@@ -62,7 +62,7 @@
     // };
 
     var popup = new mapboxgl.Popup()
-        .setLngLat(-98.2739514, 29.5650009)
+        .setLngLat([-98.2739514, 29.5650009])
         .setHTML("<h1>I'm here!</h1>")
         .addTo(map)
         marker.setPopup(popup);
