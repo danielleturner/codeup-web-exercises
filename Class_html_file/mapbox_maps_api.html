@@ -96,12 +96,15 @@
     <div class="row">
         <div class="col">
             <div class="container" id="steak"></div>
-            <p>hello</p>
         </div>
         <div class="col">
             <img src="../Assests/brazalliansteak.jpeg" alt="" style="width: 600px">
         </div>
     </div>
+</div>
+
+<div>
+    <p><button id="hideme">Hide map</button></p>
 </div>
 
 <script src="../Lecture_notes/Token.js"></script>
@@ -112,6 +115,7 @@
 <script src="https://code.jquery.com/jquery-2.2.4.js"
         integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
         crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 <script src="../Lecture_notes/mapbox-geocoder-utils.js"></script>
 
 <!-- Optional JavaScript; choose one of the two! -->
@@ -187,7 +191,11 @@
                 good.setZoom(15);
             });
     })
+     let hide = $('#hideme')
 
+    hide.click(function (){
+        console.log('clicked')
+    })
 </script>
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
