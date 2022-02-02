@@ -11,14 +11,19 @@
 
     <title>Weather Map</title>
     <style>
-        h1 {
+        #topnav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             border: 1px solid grey;
             background-color: #5ed0e6;
 
         }
+
         .jumbotron-fluid {
             background-color: #5ed0e6;
         }
+
         #map {
             height: 400px;
             width: 1000px;
@@ -60,22 +65,29 @@
             display: none;
         }
 
-        #geocoder-container > div {
-            min-width: 50%;
-            margin-left: 25%;
-        }
+        /*#geocoder-container > div {*/
+        /*    min-width: 50%;*/
+        /*    margin-left: 25%;*/
+        /*}*/
 
 
     </style>
 </head>
 <body>
-<h1>Weather App</h1>
+<div class="row" id="topnav">
+    <div class="col">
+        <h5>Weather App</h5>
+    </div>
+    <div class="col" style="text-align: right">
+        <h5>Current City: San Antonio, Texas</h5>
+    </div>
+</div>
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
         <form class="d-flex">
             <a class="navbar-brand">Place</a>
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+            <button class="btn btn-outline-success" type="submit" id="search_button">Search</button>
         </form>
 
     </div>
@@ -93,8 +105,12 @@
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <script src="Token.js/"></script>
+
+<!--Gecodder-->
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
-<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
+<link rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
+      type="text/css">
 
 <!-- Optional JavaScript; choose one of the two! -->
 <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
