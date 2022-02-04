@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<!--<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>-->
+<script>
+    // var x = 2 ** 8
+    // console.log(x)
+
+    // const myConst = 1; // can never changed when the number is declared using a const--const used be in uppercase
+
+    // if (true) {
+    //     var test1 = "bob";
+    // }
+    // console.log(test1)
+
+    // let fullName = "Bob";
+    // let age = 30;
+    // let gender = "Male";
+    // let job = "Developer";
+    //
+    // console.log(`Name: ${fullName} Age: ${age} Gender: ${gender} Job: ${job}`);
+    // using string literals you can manipulate the out put
+    // console.log(`
+    // Name: ${fullName}
+    // Age: ${age}`)
+
+    /** for of loops **/
+    // for (let element of iterable) {
+    //    code
+    // }
+
+    /** arrow functions **/
+
+    // normal function
+    // function foo2(x) {
+    //     return x + "!";
+    // }
+
+    // const foo3 = x => x + "!";
+    // console.log(foo3());
+
+    // const sayHello = function (name) {
+    //         return 'Hello, ' + name + '!';
+    //     }
+    // same as
+    // const sayHello = (name) => 'Hello, ' + name + '!';
+
+    /** abject property variable assignment shorthand**/
+
+        /** old way */
+    // const name = 'codeup';
+    // const person = {
+    //     name: name,
+    //     age: 4
+    // };
+
+    /** new shorthand */
+    // const name = 'codeup';
+    // const person = {
+    //     name,
+    //     age: 4
+    // };
+
+
+
+    /** Object Destructuring */
+        // old way
+    // var person = {name: 'codeup', age: 4};
+    // var name = person.name;
+    // var age = person.age;
+    // console.log(name); // 'codeup'
+    // console.log(age); // 4
+    // new way
+    // const person = {name: 'codeup', age: 4};
+    // const {name, age} = person;
+    // console.log(name); // 'codeup'
+    // console.log(age); // 4
+
+    /** function destructuring*/
+    // old way
+    // function tellMeAbout(person) {
+    //     var name = person.name;
+    //     var age = person.age;
+    //     console.log(name); // 'codeup'
+    //     console.log(age); // 4
+    // }
+    //
+    // const person = {name: 'codeup', age: 4};
+    // tellMeAbout(person);
+
+    // new way
+    // function tellMeAbout({name, age}) {
+    //     console.log(name); // 'codeup'
+    //     console.log(age); // 4
+    // }
+    //
+    // const person = {name: 'codeup', age: 4};
+    // tellMeAbout(person);
+
+    /** Array Destructuring*/
+
+    const myArray = [1, 2, 3, 4, 5];
+    const [x, y, z] = myArray;
+    console.log(x); // 1
+    console.log(y); // 2
+    console.log(z); // 3
+</script>
+</body>
+</html>

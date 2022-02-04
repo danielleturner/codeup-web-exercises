@@ -56,13 +56,13 @@ $('#search_button').click(function(e) {
 
                     console.log(getLocaltime());
 
-                    let html = `<div class="card col px-0" >                                  
+                    let html = `<div class="card col px-0" >
                                         <div class="card-header" >
                                              <h6 class="card-title" >${current.toLocaleDateString("en-US")}</h6>
                                         </div>
-                                        <div class="card-body">                          
+                                        <div class="card-body">
                                             <p class="card-text" style="text-align: center">${data.daily[i].temp.min}°F/${data.daily[i].temp.max}</p>
-                                            <h6 class="card-subtitle mb-2 text-muted" style="text-align: center"> <img src="http://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png"></h6>  
+                                            <h6 class="card-subtitle mb-2 text-muted" style="text-align: center"> <img src="http://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png"></h6>
                                             <p class="card-text" style="text-align: center">Description: ${data.daily[i].weather[0].description}</p>
                                             <hr>
                                             <p class="card-text">Humidity: ${data.daily[i].humidity}%</p>
@@ -70,15 +70,13 @@ $('#search_button').click(function(e) {
                                             <p class="card-text">Wind: ${data.daily[i].wind_speed}</p>
                                              <hr>
                                             <p class="card-text">Pressure: ${data.daily[i].pressure}</p>
-                                        </div> 
-                                  </div>`
+                                        </div>
+                                </div>`
                     $('#weather').append(html)
                 }
             })
 
     })
-
-
 
 })
 
@@ -137,7 +135,7 @@ const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/streets-v11', // style URL
     center: [-98.50042679347106, 29.419082681633846],
-    zoom: 10 // starting zoom
+    zoom: 12 // starting zoom
 });
 
 //Set marker options.
@@ -149,7 +147,7 @@ const map = new mapboxgl.Map({
 //     .addTo(map);
 
 
-// Geocoder
+// Draggable marker
 
 const geocoder = new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
