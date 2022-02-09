@@ -61,7 +61,7 @@ console.log(experienceTotal/experience.length)
 let email = ['justin@codeup.com', 'fernando@codeup.com', 'zach@codeup.com', 'luis@codeup.com', 'ryan@codeup.com']
 // console.log(email)
 
-let chosenEmail = [];
+// let chosenEmail = [];
 
 let longestEmail = users.reduce((previousValue, currentValue) => {
 
@@ -83,7 +83,7 @@ let namestring = names.reduce((previousValue, currentValue) => {
     return previousValue + " " + currentValue;
 }, "")
 
-console.log(namestring)
+console.log('Your instructors are: ' + namestring)
 
 // Bonus
 // Use .reduce to get the unique list of languages from the list of users.
@@ -113,7 +113,7 @@ let userinfo =[
 
 console.log(userinfo)
 
-let newinfo = userinfo.map(person => "<li>" + person.name + "</li>" + "<li>" + person.languages + "</li>")
+let newinfo = userinfo.map(person =>  person.name + " " + person.languages)
 console.log(newinfo)
 
 // let newinfo = userinfo.reduce((previousValue, currentValue) => {
