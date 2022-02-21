@@ -16,12 +16,14 @@ h5 {
     flex-direction: row;
     justify-content: space-around;
     margin-right: 20px;
+    margin-bottom: 30px;
     height: 400px;
     width: 100%;
     position: relative;
     top: 0;
     bottom: 0;
     border-radius: 45px 45px 45px 45px;
+
 }
 
 
@@ -196,11 +198,104 @@ body {
     width: 50%;
     right: 50%;
     margin-left: -25%;
-    top: 4px;
+    top: 8px;
 }
 .mapboxgl-ctrl-geocoder {
     min-width: 100%;
 }
 #map {
-    margin-top: 75px;
+
+
+}
+
+/*Add on CSS*/
+
+#topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid grey;
+    background-color: blue;
+    padding-bottom: 10px;
+
+}
+
+h5 {
+    background-color: blue;
+}
+
+#map {
+    border: 2px solid burlywood;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    margin-left: 5px;
+    top: 0;
+    bottom: 0;
+    border-radius: 45px 45px 45px 45px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px -14px 19px 5px rgba(43,43,43,0.81);
+    box-shadow: 0px 10px 13px -7px #000000, 23px -14px 19px 5px rgba(43,43,43,0.81);
+}
+
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#tab {
+    display: flex;
+    flex-direction: row;
+}
+
+#third {
+    padding-top: 10px;
+}
+
+.coordinates {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 11px;
+    line-height: 18px;
+    border-radius: 3px;
+    display: none;
+}
+
+#geocoder-container > div {
+    min-width: 50%;
+    margin-left: 25%;
+}
+
+#first {
+    /*background-image: url("/Assests/weather.jpeg");*/
+}
+
+#second {
+
+}
+
+#third {
+    background: none;
+
+}
+
+#weather {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#map {
+    margin-top: 15px;
+    display: flex;
+    width: 80%;
+    margin-left: 50px;
+    padding-bottom: 20px;
 }

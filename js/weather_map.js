@@ -26,9 +26,9 @@ function geocode(search, token) {
 }
 
 $('#search_button').click(function (e) {
-
-    let home = $("#search").val();
-    console.log(home);
+//
+//     let home = $("#search").val();
+//     console.log(home)
 
 
     geocode(home, my_mapbox_Token).then(function (coordinates) {
@@ -95,12 +95,13 @@ $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${29.4241}&lon=${-98.
         $("#map").attr("src", data.message)
         console.log(status);
 
+        // TOP NAVBAR
         let navbar =`<div class="row" id="topnav">
                             <div class="col">
-                                <h5  style="display: flex; justify-content: right">Weather App</h5>
+                                <h5  style="display: flex; justify-content: right; margin-top: 10px">Weather App</h5>
                             </div>
                             <div class="col" style="text-align: right">
-
+                                <h5  style="display: flex; justify-content: right; margin-top: 10px">Weather App</h5>
                             </div>
                         </div>`
         $('#navbar').append(navbar)
@@ -112,6 +113,7 @@ $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${29.4241}&lon=${-98.
             mapboxgl: mapboxgl,
             zoom: 13
         });
+         map.addControl(MapboxGeocoder);
 
 document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 
@@ -146,7 +148,7 @@ document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
             let html = `<div class="container">
                             <div class="row">
                                     <div class="card">
-                                        <div class="card-img"> <img src="../Assests/multiweatherpic.jpeg" width="248px" style="border-radius: 15px"> </div>
+                                        <div class="card-img"> <img src="../Assests/goodweather.jpeg" width="248px" style="border-radius: 15px"> </div>
                                         <div class="card-body">
                                             <span class="bg"></span>
                                             <span class="bg"></span>
@@ -201,27 +203,30 @@ const map = new mapboxgl.Map({
 
 //Set marker options.
 
-// const marker1 = new mapboxgl.Marker({
-//     color: "blue",
-//     draggable: true
-// }).setLngLat([-98.50042679347106, 29.419082681633846])
-//     .addTo(map);
+const marker1 = new mapboxgl.Marker({
+    color: "blue",
+    draggable: true
+}).setLngLat([-98.50042679347106, 29.419082681633846])
+    .addTo(map);
 
 
-// Draggable marker
-// [search display box]
+//Draggable marker
+//[search display box]
+
 // const geocoder = new MapboxGeocoder({
 //     accessToken: mapboxgl.accessToken,
-//     marker: {
-//         color: 'orange'
-//     },
-//     mapboxgl: mapboxgl
+//     // marker: {
+//     //     color: 'orange'
+//     // },
+//     mapboxgl: mapboxgl,
+//     zoom: 13
 // });
 
-map.addControl(geocoder);
+// map.addControl(geocoder);
 
 const marker = new mapboxgl.Marker({
-    draggable: true
+    draggable: true,
+    zoom: 13
 })
     .setLngLat([-98.50042679347106, 29.419082681633846])
     .addTo(map);
@@ -260,7 +265,7 @@ function onDragEnd() {
                 let html = `<div class="container">
                             <div class="row">
                                     <div class="card">
-                                        <div class="card-img"> <img src="../Assests/weather.jpeg" width="248px" style="border-radius: 15px"> </div>
+                                        <div class="card-img"> <img src="../Assests/goodweather.jpeg" width="248px" style="border-radius: 15px"> </div>
                                         <div class="card-body">
                                             <span class="bg"></span>
                                             <span class="bg"></span>
