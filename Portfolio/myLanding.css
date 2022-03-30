@@ -30,39 +30,69 @@ h3 {
 .projects {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     margin: 0;
 }
 
 .projects p {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
 }
 
 
 .footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-@media screen and (max-width: 430px) {
-    footer > div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    footer img{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
+#btmpg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#smedia{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/**Mobile views**/
+@media (min-width: 576px) and (max-width: 1200px) {
+    .footer{
+        display: block;
+        align-items: center;
+    }
+    .bottom-page, a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+    .footer{
+        display: block;
+        align-items: center;
+    }
+    .bottom-page, a{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/**CSS for images**/
+#bsdg{
+    border: goldenrod solid 3px;
+}
+
+#asdg{
+    border: goldenrod solid 3px;
+}
+#cdcrt{
+    border: goldenrod solid 3px;
+}
 .bsdegree {
     width: 350px;
     text-align: center;
@@ -80,6 +110,7 @@ h3 {
     text-align: center;
     height: 280px;
 }
+
 
 a {
     text-decoration: none;

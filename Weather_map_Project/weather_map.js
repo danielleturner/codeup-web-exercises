@@ -96,15 +96,19 @@ $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${29.4241}&lon=${-98.
         console.log(status);
 
         // TOP NAVBAR
-        let navbar =`<div class="row" id="topnav">
+        let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+        let navbar =`<div class="row" id="topnav" style="background-color: lightskyblue">
                             <div class="col">
-                                <h5  style="display: flex; justify-content: right; margin-top: 10px">Weather App</h5>
+                                <h5  style="display: flex; justify-content: right; margin-top: 10px; background-color: lightskyblue" >Weather App</h5>
                             </div>
                             <div class="col" style="text-align: right">
-                                <h5  style="display: flex; justify-content: right; margin-top: 10px">Weather App</h5>
+                                <h5  style="display: flex; justify-content: right; margin-top: 10px"></h5>                              
                             </div>
                         </div>`
         $('#navbar').append(navbar)
+
+
 
         // Add the control to the map.
 
@@ -148,7 +152,7 @@ document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
             let html = `<div class="container">
                             <div class="row">
                                     <div class="card">
-                                        <div class="card-img"> <img src="../Assests/goodweather.jpeg" width="248px" style="border-radius: 15px"> </div>
+                                        <div class="card-img"> <img src="../Assests/multiweatherpic.jpeg" width="248px" style="border-radius: 15px"> </div>
                                         <div class="card-body">
                                             <span class="bg"></span>
                                             <span class="bg"></span>
@@ -175,30 +179,30 @@ document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 
 Map
 
-// mapboxgl.accessToken = my_mapbox_Token;
-//
-// const coordinates = document.getElementById('coordinates');
-// const map = new mapboxgl.Map({
-//     container: 'map', // container ID
-//     style: 'mapbox://styles/mapbox/streets-v11', // style URL
-//     center: [-98.50042679347106, 29.419082681633846],
-//     zoom: 12 // starting zoom
-// });
-
 mapboxgl.accessToken = my_mapbox_Token;
+
+const coordinates = document.getElementById('coordinates');
 const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11',
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
     center: [-98.50042679347106, 29.419082681633846],
-    zoom: 12
+    zoom: 12 // starting zoom
 });
+
+// mapboxgl.accessToken = my_mapbox_Token;
+// const map = new mapboxgl.Map({
+//     container: 'map',
+//     style: 'mapbox://styles/mapbox/streets-v11',
+//     center: [-98.50042679347106, 29.419082681633846],
+//     zoom: 13
+// });
 
 // Add the control to the map.
 // const geocoder = new MapboxGeocoder({
 //     accessToken: mapboxgl.accessToken,
 //     mapboxgl: mapboxgl
 // });
-//
+
 // document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 
 //Set marker options.
@@ -210,17 +214,17 @@ const marker1 = new mapboxgl.Marker({
     .addTo(map);
 
 
-//Draggable marker
-//[search display box]
+// Draggable marker
+// [search display box]
 
-// const geocoder = new MapboxGeocoder({
-//     accessToken: mapboxgl.accessToken,
-//     // marker: {
-//     //     color: 'orange'
-//     // },
-//     mapboxgl: mapboxgl,
-//     zoom: 13
-// });
+const geocoder = new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    // marker: {
+    //     color: 'orange'
+    // },
+    mapboxgl: mapboxgl,
+    zoom: 13
+});
 
 // map.addControl(geocoder);
 
@@ -233,9 +237,9 @@ const marker = new mapboxgl.Marker({
 
 function onDragEnd() {
     const lngLat = marker.getLngLat();
-    // coordinates.style.display = 'block';
-    // coordinates.innerHTML = `Longitude: ${lngLat.lng}<br />Latitude: ${lngLat.lat}`;
-    // console.log(lngLat)
+    coordinates.style.display = 'block';
+    coordinates.innerHTML = `Longitude: ${lngLat.lng}<br />Latitude: ${lngLat.lat}`;
+    console.log(lngLat)
 
 
 
@@ -249,12 +253,13 @@ function onDragEnd() {
             $("#weather").empty()
 
 
+
             for (var i = 0; i < 5; i++) {
 
                 let current = new Date(data.daily[i].dt * 1000)
                 let today = new Date
 
-                let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
 
                 function getLocaltime() {
                     return new Date().toLocaleTimeString();
@@ -265,7 +270,7 @@ function onDragEnd() {
                 let html = `<div class="container">
                             <div class="row">
                                     <div class="card">
-                                        <div class="card-img"> <img src="../Assests/goodweather.jpeg" width="248px" style="border-radius: 15px"> </div>
+                                        <div class="card-img"> <img src="../Assests/multiweatherpic.jpeg" width="248px" style="border-radius: 15px"> </div>
                                         <div class="card-body">
                                             <span class="bg"></span>
                                             <span class="bg"></span>
@@ -291,6 +296,8 @@ function onDragEnd() {
 }
 
 marker.on('dragend', onDragEnd);
+
+
 
 
 // Weather at coordinates when dragged

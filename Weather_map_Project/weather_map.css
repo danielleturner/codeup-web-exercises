@@ -3,13 +3,9 @@
     flex-direction: row;
     justify-content: space-between;
     border: 1px solid grey;
-    background-color: blue;
-
+    /*background-color: lightskyblue;*/
 }
 
-h5 {
-    background-color: blue;
-}
 
 #map1 {
     display: flex;
