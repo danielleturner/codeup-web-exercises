@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weathermap API Project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Domine&family=Luxurious+Roman&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="weather_mapTwo.css">
+</head>
+<body class="pb-3">
+<div class="d-flex justify-content-between align-items-center" id="header">
+  <h1 class="pl-1">Weather App</h1>
+  <h2 id="currentMode">5-Day Forecast</h2>
+  <div class="d-flex justify-content-between pr-2">
+    <div class="pr-1">Current Location:</div>
+    <div id="thisCity" class="pr-1">San Antonio, Texas</div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="d-flex justify-content-between">
+    <div>
+      <label for="address">Place</label>
+      <input type="text" name="address" id="address">
+      <button id="addressButton">Get Weather</button>
+    </div>
+    <button id="switchWeather">Change TO Daily View</button>
+  </div>
+
+  <br>
+  <div class="row" id="weatherRow">
+    <!--        <div class="col card">-->
+    <!--            <div class="card-header text-center">Today's Weather</div>-->
+    <!--            <div class="card-body">-->
+    <!--                <div id="tempFeelsLike" class="text-center"></div>-->
+    <!--                <div id="icon" class="d-flex justify-content-center"><img src="" alt="weather_icon" id="weather-icon"></div>-->
+    <!--                <hr>-->
+    <!--                <div id="weatherDescription">Weather Description: </div>-->
+    <!--                <div id="humidity">Humidity: </div>-->
+    <!--                <hr>-->
+    <!--                <div id="wind">Wind: </div>-->
+    <!--                <hr>-->
+    <!--                <div id="pressure">Pressure: </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+  </div>
+  <br>
+  <div class="row">
+    <div id="map"></div>
+  </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
+      type="text/css">
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
+
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="mapbox-geocoder-utils.js"></script>
+<script src="../Lecture_notes/Token.js"></script>
+<script src="weather_mapTwo.js"></script>
+</body>
+</html>

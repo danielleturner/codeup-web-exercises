@@ -38,6 +38,8 @@ h3 {
     display: flex;
     flex-direction: column;
     text-align: center;
+    /*font-size: larger;*/
+    font-weight: bolder;
 }
 
 
@@ -113,7 +115,7 @@ h3 {
 
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: rgb(231, 83, 38);
     opacity: .8;
 }
